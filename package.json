@@ -1,0 +1,23 @@
+{
+  "name": "smart-date",
+  "version": "0.0.1",
+  "description": "Smarter Date class",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radio-miskovice/smart-date.git"
+  },
+  "keywords": [
+    "date",
+    "arithmetic"
+  ],
+  "author": "Jindra Vavruska radio.miskovice@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/radio-miskovice/smart-date/issues"
+  },
+  "homepage": "https://github.com/radio-miskovice/smart-date#readme"
+}
