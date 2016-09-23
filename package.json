@@ -1,7 +1,7 @@
 {
-  "name": "smart-date",
-  "version": "0.0.1",
-  "description": "Smarter Date class",
+  "name": "date-enhanced",
+  "version": "0.0.2",
+  "description": "DateEnhanced class extends javascript Date class to add some convenience methods.",
   "main": "index.js",
   "scripts": {
     "test": "node test"
@@ -14,7 +14,7 @@
     "date",
     "arithmetic"
   ],
-  "author": "Jindra Vavruska radio.miskovice@gmail.com",
+  "author": "Jindra Vavruska <radio.miskovice@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/radio-miskovice/smart-date/issues"

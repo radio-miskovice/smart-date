@@ -18,7 +18,9 @@ console.log( "Subtracting 20 hours: ", testdate.toLocaleString(), " => ", testda
 console.log( "Adding 24 days: ", testdate.toLocaleString(), " => ", testdate.addDays(24).toLocaleString());
 console.log( "Subtracting 10 days: ", testdate.toLocaleString(), " => ", testdate.addDays(-10).toLocaleString());
 console.log( "Adding 6 months: ", testdate.toLocaleString(), " => ", testdate.addMonths(6).toLocaleString());
-console.log( "Subtracting 13 months: ", testdate.toLocaleString(), " => ", testdate.addDays(-13).toLocaleString());
+console.log( "Subtracting 13 months: ", testdate.toLocaleString(), " => ", testdate.addMonths(-13).toLocaleString());
+console.log( "Adding 2 years: ", testdate.toLocaleString(), " => ", testdate.addYears(2).toLocaleString());
+console.log( "Subtracting 71 years: ", testdate.toLocaleString(), " => ", testdate.addYears(-71).toLocaleString());
 console.log( "Date arithmetic test finished.\n\n");
 testdate = new SmartDate() ;
 console.log( `Truncating date ${testdate.toLocaleString()} using precision codes (YYYY,MM,DD,hh,mm,ss):`);

@@ -1,3 +1,3 @@
 'use strict' ;
-const SmartDate = require('./smart-date') ;
-module.exports = SmartDate ;
+const DateEnhanced = require('./date-enhanced') ;
+module.exports = DateEnhanced ;
