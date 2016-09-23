@@ -1,10 +1,10 @@
 {
   "name": "date-enhanced",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "DateEnhanced class extends javascript Date class to add some convenience methods.",
   "main": "index.js",
   "scripts": {
-    "test": "node test"
+    "test": "node node_modules/jasmine/bin/jasmine"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/radio-miskovice/smart-date/issues"
   },
-  "homepage": "https://github.com/radio-miskovice/smart-date#readme"
+  "homepage": "https://github.com/radio-miskovice/smart-date#readme",
+  "devDependencies": {
+    "jasmine": "^2.5.2"
+  }
 }
