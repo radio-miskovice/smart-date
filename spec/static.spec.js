@@ -1,8 +1,10 @@
+'use strict' ;
+
 const DateEnhanced = require('../date-enhanced');
 
 describe("Static function", () => {
   let currentDate = new Date() ;
-  let [ yyyy, MM, dd, hh, mm, ss ] = [ 
+  let [ yyyy, MM, dd, hh, mm, ss ] = [
       currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate(),
       currentDate.getHours(), currentDate.getMinutes(), currentDate.getSeconds()
   ] ;
