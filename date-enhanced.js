@@ -27,24 +27,26 @@ class DateEnhanced extends Date {
     }
 
     truncate( precision = 'DD' ) {
-        let [ YYYY, MM, DD, hh, mm, ss ] = [ this.getFullYear(), this.getMonth(), this.getDate(), 
-                this.getHours(), this.getMinutes(), this.getSeconds() ] ;
         switch( precision ) {
             case 'year'  : ;
-            case 'YYYY'  : MM = 0 ;
+            case 'YYYY'  : this.setMonth(0) ;
             case 'month' :
-            case 'MM'    : DD = 1 ;
+            case 'MM'    : this.setDate(1) ;
             case 'day'   :
-            case 'DD'    : hh = 0 ;
+            case 'DD'    : this.setHours(0) ;
             case 'hour'  :
-            case 'hh'    : mm = 0 ;
+            case 'hh'    : this.setMinutes(0) ;
             case 'minute' : 
-            case 'mm'    : ss = 0 ;
+            case 'mm'    : this.setSeconds(0) ;
             case 'ss'    : 
-            case 'second': 
-                return new DateEnhanced( YYYY, MM, DD, hh, mm, ss );
+            case 'second': this.setMilliseconds(0);
+                return this ;
             default: throw new Error (`Invalid precision code in DateEnhanced.truncate( precision ). Precision code = "${precision}"`) ;
         }
+    }
+
+    truncated( precision ) {
+        return (new DateEnhanced( this )).truncate( precision );
     }
 
     addSeconds ( seconds ) { let newDate = new Date(this); newDate.setSeconds( newDate.getSeconds() + seconds ); return newDate ; }
@@ -54,14 +56,6 @@ class DateEnhanced extends Date {
     addMonths  ( months )  { let newDate = new Date(this); newDate.setMonth( newDate.getMonth() + months ); return newDate ; }
     addYears   ( years )   { let newDate = new Date(this); newDate.setFullYear( newDate.getFullYear() + years ); return newDate ; }
     
-    firstDay() {
-        let result = new DateEnhanced( this.getFullYear(), this.getMonth(), 1 );
-        return result ;
-    }
-
-    lastDay() {
-
-    }    
 }
 
 module.exports = DateEnhanced ;
