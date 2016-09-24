@@ -4,39 +4,49 @@
 
 Smarter Date class than the default javascript Date
 
-## Introduction
+# Introduction
 
 DateEnhanced extends Date class by adding several convenience methods, both static and instance.
 
-### Compatibility
+## Compatibility
 
 This module uses ES6 syntax including spread operator. Therefore it will run in NodeJS version 6 and above.
 
-## Static Methods
+## Installation
 
-### DateEnhanced.today()
+    npm install date-enhanced
+
+## How to Use
+
+    const DateEnhanced = require('date-enhanced');
+
+Use the same way you would use Date.
+
+# Static Methods
+
+## DateEnhanced.today()
 
 Returns DateEnhanced object set to current local date, 00:00:00 local time. Since version 1.
 
-### DateEnhanced.yesterday()
+## DateEnhanced.yesterday()
 
 Returns DateEnhanced object set to current local date minus one day, 00:00:00 local time. Since version 1.
 
-### DateEnhanced.tomorrow()
+## DateEnhanced.tomorrow()
 
 Returns DateEnhanced object set to current local date plus one day, 00:00:00 local time. Since version 1.
 
-### DateEnhanced.thisMonth()
+## DateEnhanced.thisMonth()
 
 Returns DateEnhanced object set to the first day of the current month, 00:00:00 local time. Since version 1.
 
-### DateEnhanced.nextMonth()
+## DateEnhanced.nextMonth()
 
 Returns DateEnhanced object set to the first day of the next month, 00:00:00 local time. Since version 1.
 
-## Instance Methods
+# Instance Methods
 
-### truncate( precision = 'DD' )
+## truncate( precision = 'DD' )
 
 Truncates instance value to the units indicated in parameter _precision_ and returns the original instance, i.e. it is a chainable
 method. Precision units are:
@@ -56,31 +66,31 @@ method. Precision units are:
 
 Please note that this method modifies the instance itself.
 
-### truncated( precision = 'DD' )
+## truncated( precision = 'DD' )
 
 This method does the same job as truncate() except that it returns a new, truncated instance 
 and leaves the original instance unmodified.
 
-### addSeconds ( seconds ) 
+## addSeconds ( seconds ) 
 
 Returns a new instance with value changed by the amount of seconds specified (both positive or negative).
 
-### addMinutes ( minutes )
+## addMinutes ( minutes )
 
 Returns a new instance with value changed by the amount of minutes specified (both positive or negative).
 
-### addHours   ( hours )  
+## addHours   ( hours )  
 
 Returns a new instance with value changed by the amount of hours specified (both positive or negative).
 
-### addDays    ( days )   
+## addDays    ( days )   
 
 Returns a new instance with value changed by the amount of days specified (both positive or negative).
 
-### addMonths  ( months ) 
+## addMonths  ( months ) 
 
 Returns a new instance with value changed by the amount of months specified (both positive or negative).
 
-### addYears   ( years )  
+## addYears   ( years )  
 
 Returns a new instance with value changed by the amount of years specified (both positive or negative).
