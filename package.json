@@ -1,6 +1,6 @@
 {
   "name": "date-enhanced",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "DateEnhanced class extends javascript Date class to add some convenience methods.",
   "main": "index.js",
   "scripts": {
